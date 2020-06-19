@@ -16,7 +16,7 @@
                 </style>
 <g id="Lines">
     fill:none;stroke:#000000;stroke-width:14.1732;stroke-miterlimit:10;stroke-dasharray:42.2155,84.4309;
-    <line *ngFor="let number of usableLines;" [attr.x1]=100*number y1="-200" [attr.x2]=100*number y2="1700" style="fill:none;stroke:white;stroke-width:14.1732;stroke-miterlimit:10;" attr.stroke-dasharray="{{number%2? 50:100}},50" />
+    <line *ngFor="let number of usableLines;" [attr.x1]=(100*number)+50 y1="-200" [attr.x2]=(100*number)+50 y2="1700" style="fill:none;stroke:white;stroke-width:14.1732;stroke-miterlimit:10;stroke-linecap:round" attr.stroke-dasharray="{{number%2? 50:100}},50" />
 </g>
 
                 <!-- <g id="Lines">
