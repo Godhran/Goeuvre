@@ -143,8 +143,10 @@ export class MobComponent implements OnInit {
     .fromTo('#Body',3, {
       transformOrigin: "50% 50%",
       scale: 1,
+      ease:Power0.easeNone
     }, {
-      scale: 1.3
+      scale: 1.3,
+      ease:Power0.easeNone
     }, "=-0")
     // .fromTo('#Eyes',2, {
     //   transformOrigin: "50% 50%",
@@ -155,8 +157,10 @@ export class MobComponent implements OnInit {
     .fromTo('#Body', 3, {
       transformOrigin: "50% 50%",
       scale: 1.3,
+      ease:Power0.easeNone
     }, {
-      scale: 1
+      scale: 1,
+      ease:Power0.easeNone
     }, "=-0")
     // .fromTo('#Eyes',2, {
     //   transformOrigin: "50% 50%",
