@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TimelineLite, TimelineMax,Linear,Elastic } from 'gsap';
+import { TimelineLite, TimelineMax,Linear,Elastic,Expo,Power0 } from 'gsap';
 
 @Component({
   selector: 'mobAnimation',
@@ -16,7 +16,7 @@ export class MobComponent implements OnInit {
   numberAnimation = new TimelineLite({ paused: true, repeat: -1 });
   backgroundLinesAnimation = new TimelineLite({ paused: true, repeat: -1 });
   bodyAnimation = new TimelineLite({ paused: true, repeat: -1,ease:Elastic.easeInOut });
-  linesAnimations = new TimelineLite({ paused: true, repeat:-1, ease:Linear.easeNone });
+  linesAnimations = new TimelineLite({ paused: true, repeat:-1, ease:Power0.easeNone });
 
   constructor() { }
 
@@ -74,7 +74,7 @@ export class MobComponent implements OnInit {
     // this.linesAnimations.play();
 
 
-    this.linesAnimations
+    // this.linesAnimations
     // .fromTo('#Lines', 2, {
     //   transformOrigin: "50% 50%",
     //   rotate:0,
@@ -106,9 +106,9 @@ export class MobComponent implements OnInit {
     // }, "=-0")
     .fromTo('#Lines', 0.3, {
       transformOrigin: "50% 50%",
-      y:200
+      y:300,ease:Power0.easeNone
     }, {
-      y:0
+      y:0, ease:Power0.easeNone
     }, "=-0")
 
     this.linesAnimations.play();
