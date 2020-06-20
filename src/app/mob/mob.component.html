@@ -15,12 +15,34 @@
                     .st8{fill:none;stroke:#FFFFFF;stroke-width:22.6772;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
                     .st9{fill:none;stroke:white;stroke-width:14.1732;stroke-linecap:square;stroke-miterlimit:10;}
                 </style>
-<g id="Lines">
-    fill:none;stroke:#000000;stroke-width:14.1732;stroke-miterlimit:10;stroke-dasharray:42.2155,84.4309;
+
+                <clipPath id="glitch1">
+                    <rect x="275" y="125" width="950" height="50" style="fill:'blue'" />
+                </clipPath>
+                
+                <clipPath id="glitch2">
+                    <rect x="275" y="175" width="950" height="75" style="fill:'blue'" />
+                </clipPath>
+                
+                <clipPath id="glitch3">
+                    <rect x="275" y="250" width="950" height="40" style="fill:'orange'" />
+                </clipPath>
+                
+                <clipPath id="glitch4">
+                    <rect x="275" y="290" width="950" height="110" style="fill:'red'" />
+                </clipPath>
+
+                <!-- <rect x="275" y="125" width="950" height="100" style="fill:'blue'" />
+                <rect x="275" y="225" width="950" height="25" style="fill:'green'" />
+                <rect x="275" y="250" width="950" height="50" style="fill:'orange'" />
+                <rect x="275" y="300" width="950" height="100" style="fill:'red'" /> -->
+                <g id="Lines">
+    <!-- fill:none;stroke:#000000;stroke-width:14.1732;stroke-miterlimit:10;stroke-dasharray:42.2155,84.4309; -->
     <line *ngFor="let number of usableLines;" class="animatedLine" [attr.x1]=(100*number)+50 y1="-200" [attr.x2]=(100*number)+50 y2="1700" style="fill:none;stroke:white;stroke-width:14.1732;stroke-miterlimit:10;stroke-linecap:round;opacity:0.5" attr.stroke-dasharray="{{number%2? 50:100}},50" />
     <line *ngFor="let number of usableLines;" class="animatedLine2" [attr.x1]=(100*number)+100 y1="-200" [attr.x2]=(100*number)+100 y2="1700" style="fill:none;stroke:white;stroke-width:14.1732;stroke-miterlimit:10;stroke-linecap:round" attr.stroke-dasharray="{{number%2? 50:100}},50" />
 
 </g>
+
 
                 <!-- <g id="Lines">
                     <g>
@@ -166,8 +188,8 @@
                     <path class="st3" d="M1032.22,1189.9c0,0-91.38-50.39-160.89-50.39c-20.32,0-56.45,4.09-56.45,4.09"/> -->
                 </g>
 
-                
-                <g id="Text">
+                <g id="Text" >
+                <g id="Text1" clip-path="url(#glitch1)">
                     <g>
                         <g>
                             <path class="st4" d="M431.71,139.57v44.85h-95.23v23.11h-44.84v-67.96H431.71z M364.03,216.53h67.68v44.84h-22.84v23.25h-44.84
@@ -182,6 +204,52 @@
                         </g>
                     </g>
                 </g>
+                <g id="Text2" clip-path="url(#glitch2)">
+                    <g>
+                        <g>
+                            <path class="st4" d="M431.71,139.57v44.85h-95.23v23.11h-44.84v-67.96H431.71z M364.03,216.53h67.68v44.84h-22.84v23.25h-44.84
+                                V216.53z M408.87,293.48v44.98h-44.84v-44.98H408.87z M436.55,139.57h44.85v121.8h-44.85V139.57z"/>
+                            <path class="st4" d="M644.86,139.57v44.85h-95.23v23.11h-44.84v-67.96H644.86z M577.18,216.53h67.68v44.84h-22.84v23.25h-44.84
+                                V216.53z M622.02,293.48v44.98h-44.84v-44.98H622.02z M649.71,139.57h44.85v121.8h-44.85V139.57z"/>
+                            <path class="st4" d="M858.01,139.57v44.85h-95.23v23.11h-44.84v-67.96H858.01z M790.33,216.53h67.68v44.84h-22.84v23.25h-44.84
+                                V216.53z M835.18,293.48v44.98h-44.84v-44.98H835.18z M862.86,139.57h44.85v121.8h-44.85V139.57z"/>
+                            <path class="st4" d="M990.89,139.57v44.85h-14.95v12.32h14.95v44.85h-59.79V139.57H990.89z M995.73,139.57h44.84v102.01h-44.84
+                                V139.57z M1096.08,139.57h43.32c-58.41,124.57-90.15,190.87-95.23,198.9h-43.32C1059.26,213.9,1091,147.6,1096.08,139.57z
+                                 M1159.47,236.46v44.84h-14.95v12.32h14.95v44.85h-59.79V236.46H1159.47z M1164.32,236.46h44.84v102.01h-44.84V236.46z"/>
+                        </g>
+                    </g>
+                </g>
+                <g id="Text3" clip-path="url(#glitch3)">
+                    <g>
+                        <g>
+                            <path class="st4" d="M431.71,139.57v44.85h-95.23v23.11h-44.84v-67.96H431.71z M364.03,216.53h67.68v44.84h-22.84v23.25h-44.84
+                                V216.53z M408.87,293.48v44.98h-44.84v-44.98H408.87z M436.55,139.57h44.85v121.8h-44.85V139.57z"/>
+                            <path class="st4" d="M644.86,139.57v44.85h-95.23v23.11h-44.84v-67.96H644.86z M577.18,216.53h67.68v44.84h-22.84v23.25h-44.84
+                                V216.53z M622.02,293.48v44.98h-44.84v-44.98H622.02z M649.71,139.57h44.85v121.8h-44.85V139.57z"/>
+                            <path class="st4" d="M858.01,139.57v44.85h-95.23v23.11h-44.84v-67.96H858.01z M790.33,216.53h67.68v44.84h-22.84v23.25h-44.84
+                                V216.53z M835.18,293.48v44.98h-44.84v-44.98H835.18z M862.86,139.57h44.85v121.8h-44.85V139.57z"/>
+                            <path class="st4" d="M990.89,139.57v44.85h-14.95v12.32h14.95v44.85h-59.79V139.57H990.89z M995.73,139.57h44.84v102.01h-44.84
+                                V139.57z M1096.08,139.57h43.32c-58.41,124.57-90.15,190.87-95.23,198.9h-43.32C1059.26,213.9,1091,147.6,1096.08,139.57z
+                                 M1159.47,236.46v44.84h-14.95v12.32h14.95v44.85h-59.79V236.46H1159.47z M1164.32,236.46h44.84v102.01h-44.84V236.46z"/>
+                        </g>
+                    </g>
+                </g>
+                <g id="Text4" clip-path="url(#glitch4)">
+                    <g>
+                        <g>
+                            <path class="st4" d="M431.71,139.57v44.85h-95.23v23.11h-44.84v-67.96H431.71z M364.03,216.53h67.68v44.84h-22.84v23.25h-44.84
+                                V216.53z M408.87,293.48v44.98h-44.84v-44.98H408.87z M436.55,139.57h44.85v121.8h-44.85V139.57z"/>
+                            <path class="st4" d="M644.86,139.57v44.85h-95.23v23.11h-44.84v-67.96H644.86z M577.18,216.53h67.68v44.84h-22.84v23.25h-44.84
+                                V216.53z M622.02,293.48v44.98h-44.84v-44.98H622.02z M649.71,139.57h44.85v121.8h-44.85V139.57z"/>
+                            <path class="st4" d="M858.01,139.57v44.85h-95.23v23.11h-44.84v-67.96H858.01z M790.33,216.53h67.68v44.84h-22.84v23.25h-44.84
+                                V216.53z M835.18,293.48v44.98h-44.84v-44.98H835.18z M862.86,139.57h44.85v121.8h-44.85V139.57z"/>
+                            <path class="st4" d="M990.89,139.57v44.85h-14.95v12.32h14.95v44.85h-59.79V139.57H990.89z M995.73,139.57h44.84v102.01h-44.84
+                                V139.57z M1096.08,139.57h43.32c-58.41,124.57-90.15,190.87-95.23,198.9h-43.32C1059.26,213.9,1091,147.6,1096.08,139.57z
+                                 M1159.47,236.46v44.84h-14.95v12.32h14.95v44.85h-59.79V236.46H1159.47z M1164.32,236.46h44.84v102.01h-44.84V236.46z"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
                 <!-- <g id="Eye_Sparks">
                     <polyline class="st6" points="745.41,926.82 710.25,926.82 692.89,917.73 684.72,910.12 654.39,935.7 646.75,918.56 627.49,950.73 
                             "/>
@@ -197,6 +265,7 @@
                     </g>
                 </g> -->
                 </svg>
+            <div role="group" class="btn-group"><button class="btn btn-primary" type="button">Button 1</button><button class="btn btn-primary" type="button">Button 1</button><button class="btn btn-primary" type="button">Button 2</button></div>
         </form>
     </div>
 </div>

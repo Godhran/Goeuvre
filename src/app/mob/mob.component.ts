@@ -17,6 +17,7 @@ export class MobComponent implements OnInit {
   backgroundLinesAnimation = new TimelineLite({ paused: true, repeat: -1 });
   bodyAnimation = new TimelineLite({ paused: true, repeat: -1,ease:Elastic.easeInOut });
   linesAnimations = new TimelineLite({ paused: true, repeat:-1, ease:Power0.easeNone });
+  glitchAnimations = new TimelineLite({ paused: true, repeat: -1 });
 
   constructor() { }
 
@@ -38,22 +39,105 @@ export class MobComponent implements OnInit {
   }
 
   initialiseText(){    
+    // this.numberAnimation
+    // .fromTo('#Text', 1, {
+    //   transformOrigin: "50% 50%",
+    //   scale: 1
+    // }, {
+    //   scale: 1.25,
+    //   ease:Linear.easeInOut
+    // }, "=-0")
+    // .fromTo('#Text', 1, {
+    //   transformOrigin: "50% 50%",
+    //   scale: 1.25
+    // }, {
+    //   scale: 1,
+    //   ease:Linear.easeInOut
+    // }, "=-0")
+    // this.numberAnimation.play();
+
     this.numberAnimation
-    .fromTo('#Text', 1, {
+    .fromTo('#Text', 0.5, {
       transformOrigin: "50% 50%",
       scale: 1
     }, {
       scale: 1.25,
       ease:Linear.easeInOut
     }, "=-0")
-    .fromTo('#Text', 1, {
+    .fromTo('#Text', 0.5, {
       transformOrigin: "50% 50%",
       scale: 1.25
     }, {
       scale: 1,
       ease:Linear.easeInOut
     }, "=-0")
+    .fromTo('#Text1', 0.1, {
+      transformOrigin: "50% 100%",
+      x:0
+    }, {
+      x:10
+      // ease: Elastic.out
+    }, "=-1")
+    .fromTo('#Text1', 0.1, {
+      transformOrigin: "50% 100%",
+      x:10
+    }, {
+      x:0
+      // ease: Elastic.out
+    }, "=-0")
+    .fromTo('#Text2', 0.1, {
+      transformOrigin: "50% 100%",
+      x:0
+    }, {
+      x:-10
+      // ease: Elastic.out
+    }, "=-1")
+    .fromTo('#Text2', 0.1, {
+      transformOrigin: "50% 100%",
+      x:-10
+    }, {
+      x:0
+      // ease: Elastic.out
+    }, "=-0")
+    .fromTo('#Text3', 0.1, {
+      transformOrigin: "50% 100%",
+      x:0
+    }, {
+      x:10
+      // ease: Elastic.out
+    }, "=-1")
+    .fromTo('#Text3', 0.1, {
+      transformOrigin: "50% 100%",
+      x:10
+    }, {
+      x:0
+      // ease: Elastic.out
+    }, "=-0")
+    .fromTo('#Text4', 0.1, {
+      transformOrigin: "50% 100%",
+      x:0
+    }, {
+      x:-10
+      // ease: Elastic.out
+    }, "=-1")
+    .fromTo('#Text4', 0.1, {
+      transformOrigin: "50% 100%",
+      x:0
+    }, {
+      x:10
+      // ease: Elastic.out
+    }, "=-0")
     this.numberAnimation.play();
+
+    // this.glitchAnimations
+    // .fromTo('#Text1', 1, {
+    //   transformOrigin: "50% 50%",
+    //   x: 100
+    // }, {
+    //   x: 200,
+    //   ease:Linear.easeInOut
+    // }, "=-0")
+    // this.glitchAnimations.play();
   }
 
   
