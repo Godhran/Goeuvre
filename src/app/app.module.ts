@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { MobComponent } from './mob/mob.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { CactuarComponent } from './cactuar/cactuar.component';
+import { GudetamaComponent } from './gudetama/gudetama.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MobComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    CactuarComponent,
+    GudetamaComponent
   ],
   imports: [
     BrowserModule,
