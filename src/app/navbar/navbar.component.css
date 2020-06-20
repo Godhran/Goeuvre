@@ -32,7 +32,8 @@ a {
 }
 
 .navigation-clean .navbar-brand:hover {
-    color: #222;
+    color: white;
+    font-weight: bolder;
 }
 
 .navigation-clean.navbar-dark .navbar-brand:hover {

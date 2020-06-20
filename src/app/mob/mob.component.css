@@ -45,6 +45,10 @@
     }
 }
 
+.textSVG {
+    fill: red;
+}
+
 .register-photo form {
     display: table-cell;
     width: 400px;
