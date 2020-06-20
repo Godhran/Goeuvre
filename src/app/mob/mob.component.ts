@@ -51,12 +51,12 @@ export class MobComponent implements OnInit {
         transformOrigin: "50% 50%",
         scale: 1
       }, {
-        scale: 1.35,
+        scale: 1.425,
         ease: Elastic.easeInOut
       }, "=-0")
       .fromTo('#Text', 0.5, {
         transformOrigin: "50% 50%",
-        scale: 1.35
+        scale: 1.425
       }, {
         scale: 1,
         ease: Elastic.easeInOut
