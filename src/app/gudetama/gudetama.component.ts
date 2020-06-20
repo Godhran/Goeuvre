@@ -12,7 +12,7 @@ export class GudetamaComponent implements OnInit {
   rockingAnimation = new TimelineLite({paused:true,repeat:-1});
   textAnimation = new TimelineLite({paused:true,repeat:-1});
   mouthAnimation = new TimelineLite({paused:true,repeat:-1});
-  message=["So tiring...","Seriously, I can't..."];
+  message=["so tiring...","seriously, I can't..."];
   public textOffsetOne:number=1200;
   public textOffsetTwo:number=4000;
   timer:boolean=false;
