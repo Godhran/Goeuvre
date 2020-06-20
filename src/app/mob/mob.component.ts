@@ -34,7 +34,7 @@ export class MobComponent implements OnInit {
     this.initialiseText();
     this.initaliseBody();
     // this.initaliseEyes();
-    this.initaliseLines();
+    // this.initaliseLines();
   }
 
   initialiseText(){    
