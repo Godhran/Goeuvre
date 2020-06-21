@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TimelineLite, TimelineMax, Linear, Elastic, Expo, Power0 } from 'gsap';
+import { TimelineLite, TimelineMax, Linear, Elastic, Back, Power0 } from 'gsap';
 import { bindCallback } from 'rxjs';
 
 @Component({
@@ -132,19 +132,35 @@ export class GudetamaComponent implements OnInit {
     .fromTo('#Gudetama', 2, {
       transformOrigin: "50% 100%",
       rotation:5,
-      ease: Power0.easeNone
+      ease: Back.easeOut
     }, {
       rotation:-5, 
-      ease: Power0.easeNone
+      ease: Back.easeOut
     }, "=-0")
+    .fromTo('#Shadow', 2, {
+      transformOrigin: "50% 100%",
+      x:25,
+      ease: Back.easeOut
+    }, {
+      x:-25, 
+      ease: Back.easeOut
+    }, "=-2")
     .fromTo('#Gudetama', 2, {
       transformOrigin: "50% 100%",
       rotation:-5,
-      ease: Power0.easeNone
+      ease: Back.easeOut
     }, {
       rotation:5, 
-      ease: Power0.easeNone
+      ease: Back.easeOut
     }, "=-0")
+    .fromTo('#Shadow', 2, {
+      transformOrigin: "50% 100%",
+      x:-25,
+      ease: Back.easeOut
+    }, {
+      x:25, 
+      ease: Back.easeOut
+    }, "=-2")
 
     this.rockingAnimation.play();
   }
