@@ -1,8 +1,8 @@
-.register-photo {
+.goeuvre-container {
     padding: 80px 0;
 }
 
-.register-photo .image-holder {
+.goeuvre-container .image-holder {
     display: table-cell;
     width: auto;
     background-size: cover;
@@ -15,7 +15,7 @@
     background-color: black;
 }
 
-.register-photo .form-container {
+.goeuvre-container .form-container {
     display: table;
     max-width: 900px;
     width: 90%;
@@ -49,7 +49,7 @@
     fill: red;
 }
 
-.register-photo form {
+.goeuvre-container form {
     display: table-cell;
     width: 400px;
     color: #505e6c;
@@ -57,18 +57,18 @@
 
 
 /* @media (max-width:991px) {
-    .register-photo form {
+    .goeuvre-container form {
         padding: 40px;
     }
 } */
 
-.register-photo form h2 {
+.goeuvre-container form h2 {
     font-size: 24px;
     line-height: 1.5;
     margin-bottom: 30px;
 }
 
-.register-photo form .form-control {
+.goeuvre-container form .form-control {
     background: #f7f9fc;
     border: none;
     border-bottom: 1px solid #dfe7f1;
@@ -80,12 +80,12 @@
     height: 40px;
 }
 
-.register-photo form .form-check {
+.goeuvre-container form .form-check {
     font-size: 13px;
     line-height: 20px;
 }
 
-.register-photo form .btn-primary {
+.goeuvre-container form .btn-primary {
     background: #f4476b;
     border: none;
     border-radius: 4px;
@@ -96,16 +96,16 @@
     outline: none !important;
 }
 
-.register-photo form .btn-primary:hover,
-.register-photo form .btn-primary:active {
+.goeuvre-container form .btn-primary:hover,
+.goeuvre-container form .btn-primary:active {
     background: #eb3b60;
 }
 
-.register-photo form .btn-primary:active {
+.goeuvre-container form .btn-primary:active {
     transform: translateY(1px);
 }
 
-.register-photo form .already {
+.goeuvre-container form .already {
     display: block;
     text-align: center;
     font-size: 12px;
