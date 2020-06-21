@@ -78,10 +78,21 @@ a {
     border-top-color: #333;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .navigation-clean .navbar-nav>.active>a,
 .navigation-clean .navbar-nav>.show>a {
     background: none;
     box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../../assets/hamburger.svg)!important;
 }
 
 .navigation-clean.navbar-light .navbar-nav .nav-link.active,
