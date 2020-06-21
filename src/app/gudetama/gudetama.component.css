@@ -23,6 +23,28 @@
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
+.animatedLine {
+    stroke-dasharray: 100;
+    animation: dash 1s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 1000;
+    }
+}
+
+.animatedLine2 {
+    stroke-dasharray: 50;
+    animation: dash2 1s linear infinite;
+}
+
+@keyframes dash2 {
+    to {
+        stroke-dashoffset: 500;
+    }
+}
+
 .textSVG {
     fill: red;
 }

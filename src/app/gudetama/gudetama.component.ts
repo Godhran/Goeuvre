@@ -12,6 +12,7 @@ export class GudetamaComponent implements OnInit {
   rockingAnimation = new TimelineLite({paused:true,repeat:-1});
   textAnimation = new TimelineLite({paused:true,repeat:-1});
   mouthAnimation = new TimelineLite({paused:true,repeat:-1});
+  idleChopsticks = new TimelineLite({paused:true,repeat:-1});
   message=["so tiring...","seriously, I can't..."];
   public textOffsetOne:number=1200;
   public textOffsetTwo:number=4000;
@@ -52,8 +53,32 @@ export class GudetamaComponent implements OnInit {
     this.initialiseRocking();
     // this.initialiseText();
     this.initialiseMouth();
+    this.initialiseIdleChopsticks();
     // this.soTiring();
   }
+  initialiseIdleChopsticks() {
+    this.idleChopsticks
+    .fromTo('#Chopsticks', 2, {
+      rotate:5,
+      x:0,
+      y:0
+    }, {
+      rotate:10,
+      x:10,
+      y:20
+    }, "=-0")
+    .fromTo('#Chopsticks', 2, {
+      rotate:10,
+      x:10,
+      y:20
+    }, {
+      rotate:5,
+      x:0,
+      y:0
+    }, "=-0")
+    this.idleChopsticks.play();
+  }
+
   initialiseMouth() {
     this.mouthAnimation
     .fromTo('#mouth', 0.1, {
