@@ -111,20 +111,20 @@ export class GudetamaComponent implements OnInit {
       y:0,
       ease:Elastic.easeInOut
     },"=-0")
-    .fromTo('#gudetamaPah', 2, {
+    .fromTo('#gudetamaPah', 3.5, {
       transformOrigin: "50% 50%",
       y:0,
       scale:0
     }, {
-      y:-700,
+      y:-1100,
       scale:2
     }, "=-1.5")
     .to('#mouth', 0, {
       fill:'white'
-    },"=-2")
+    },"=-3.5")
     .to('#mouth', 0, {
       fill:'black'
-    },"=0")
+    },"=-1")
     .to('#Chopsticks', 1, {
       x:300,
       y:-300,
