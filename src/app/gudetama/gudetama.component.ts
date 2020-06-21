@@ -53,7 +53,7 @@ export class GudetamaComponent implements OnInit {
     this.initialiseRocking();
     // this.initialiseText();
     this.initialiseMouth();
-    this.initialiseIdleChopsticks();
+    // this.initialiseIdleChopsticks();
     // this.soTiring();
   }
   initialiseIdleChopsticks() {
