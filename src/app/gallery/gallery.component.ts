@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class GalleryComponent implements OnInit {
 
   galleryList = [{
-    slug: "mobpsycho", name: "Mob Psycho"
+    slug: "mobpsycho", name: "Mob Psycho", instructions: "<<< Click anywhere!"
   }, {
-    slug: "gudetama", name: "Gudetama"
+    slug: "gudetama", name: "Gudetama", instructions: "<<< Poke his belly!"
   }, {
-    slug: "woah", name: "Woah You Go Big Guy"
+    slug: "woah", name: "Woah, You Go Big Guy!", instructions: ""
   }
   ];
   constructor() { }

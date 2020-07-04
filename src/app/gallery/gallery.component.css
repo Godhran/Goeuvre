@@ -44,6 +44,15 @@ li {
     color: white;
 }
 
+.galleryInstructions {
+    margin-left: 1em;
+    font-family: 'Major Mono Display', monospace;
+    color: white;
+    opacity: 0.5;
+    text-transform: lowercase;
+    font-style: italic;
+}
+
 @keyframes dash {
     to {
         stroke-dashoffset: 1000;

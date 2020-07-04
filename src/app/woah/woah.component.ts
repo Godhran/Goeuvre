@@ -13,6 +13,8 @@ export class WoahComponent implements OnInit {
   HeadAnimation = new TimelineLite({ paused: true, repeat: -1 });
   WoahAnimation = new TimelineLite({ paused: true, repeat: -1 });
 
+  colours = {background:'#EB564B',skinColour:'#FFB570',lightestColour:'#FFE478'};
+
   constructor() { }
 
   ngOnInit(): void {
@@ -167,6 +169,11 @@ export class WoahComponent implements OnInit {
     //   ease: Elastic.easeInOut
     // }, "=-0.5")
     this.ArmAnimation.play();
+  }
+
+  test=()=>{
+    this.colours.skinColour="#FFFFFF";
+    this.colours.lightestColour="#FFFFFF";
   }
 
 }
