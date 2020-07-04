@@ -44,27 +44,27 @@ export class WoahComponent implements OnInit {
 
   initHead(){
     this.HeadAnimation
-    .fromTo('#Mask', 0.5, {
+    .fromTo('#Mask', 1, {
         transformOrigin: "50% 50%",
-        y:-25,
+        // y:-25,
         scale:1.025,
         rotate:-7.5,
       }, {
-        y:0,
+        // y:0,
         scale:1,
         rotate:7.5,
         ease: Elastic.easeInOut
       }, "=-0")   
       .fromTo('#Mask', 0.5, {
           transformOrigin: "50% 50%",
-          y:0,
+          // y:0,
           scale:1,
           rotate:7.5,
         }, {
-          y:-25,
+          // y:-25,
           scale:1.025,
           rotate:-7.5,
-        }, "=-0")   
+        }, "=0.5")   
     this.HeadAnimation.play();
 
   }
@@ -108,22 +108,22 @@ export class WoahComponent implements OnInit {
       transformOrigin: "0% 50%",
       rotate: -7.5,
       scale:1,
-      x:-25
+      // x:-25
     }, {
       rotate: 7.5,
       scale:1,
-      x:0,
+      // x:0,
       ease: Elastic.easeInOut
     }, "=-0.5")
     .fromTo('#RightArm', 0.5, {
       transformOrigin: "100% 50%",
       rotate: -7.5,
       scale:1,
-      x:25
+      // x:25
     }, {
       rotate: 7.5,
       scale:1,
-      x:0,
+      // x:0,
       ease: Elastic.easeInOut
     }, "=-0.5")
     // .fromTo('#Mask', 0.5, {
@@ -141,22 +141,22 @@ export class WoahComponent implements OnInit {
       transformOrigin: "0% 50%",
       rotate: 7.5,
       scale:1,
-      x:0
+      // x:0
     }, {
       rotate:-7.5,
       scale:1,
-      x:-25,
+      // x:-25,
       ease: Elastic.easeInOut
     }, "=-0")
     .fromTo('#RightArm',  0.5, {
       transformOrigin: "100% 50%",
       rotate: 7.5,
       scale:1,
-      x:0
+      // x:0
     }, {
       rotate:-7.5,
       scale:1,
-      x:25,
+      // x:25,
       ease: Elastic.easeInOut
     }, "=-0.5")
     // .fromTo('#Mask', 0.5, {
