@@ -25,22 +25,7 @@ export class WoahComponent implements OnInit {
     this.initArms();
     this.initHead();
     this.initBody();
-    // this.initRight();
   }
-
-  // initLeft() {
-  //   this.leftArmAnimation
-  //     .fromTo('#LeftArm', 0.5, {
-  //       transformOrigin: "0% 50%",
-  //       scaleY: 1,
-  //       scaleX: 1
-  //     }, {
-  //       scaleY: 1.5,
-  //       scaleX: 1.25,
-  //       ease: Elastic.easeInOut
-  //     }, "=-0")
-  //   this.leftArmAnimation.play();
-  // }
 
   initHead(){
     this.HeadAnimation
@@ -95,15 +80,6 @@ export class WoahComponent implements OnInit {
 
   initArms() {
     this.ArmAnimation
-    // .fromTo('#WrestlerEntire', 0.5, {
-    //   transformOrigin: "50% 50%",
-    //   rotate: -3.5,
-    //   scale:0.9
-    // }, {
-    //   rotate: 3.5,
-    //   scale:1,
-    //   ease: Elastic.easeInOut
-    // }, "=-0")
     .fromTo('#LeftArm', 0.5, {
       transformOrigin: "0% 50%",
       rotate: -7.5,
@@ -126,17 +102,6 @@ export class WoahComponent implements OnInit {
       // x:0,
       ease: Elastic.easeInOut
     }, "=-0.5")
-    // .fromTo('#Mask', 0.5, {
-    //   transformOrigin: "50% 50%",
-    //   y:-25,
-    //   scale:1.05,
-    //   rotate:-7.5,
-    // }, {
-    //   y:0,
-    //   scale:1,
-    //   rotate:7.5,
-    //   ease: Elastic.easeInOut
-    // }, "=-0.5")    
     .fromTo('#LeftArm',  0.5, {
       transformOrigin: "0% 50%",
       rotate: 7.5,
@@ -159,21 +124,7 @@ export class WoahComponent implements OnInit {
       // x:25,
       ease: Elastic.easeInOut
     }, "=-0.5")
-    // .fromTo('#Mask', 0.5, {
-    //   transformOrigin: "50% 50%",
-    //   y:0,
-    //   scale:1,
-    // }, {
-    //   y:-25,
-    //   scale:1.05,
-    //   ease: Elastic.easeInOut
-    // }, "=-0.5")
     this.ArmAnimation.play();
-  }
-
-  test=()=>{
-    this.colours.skinColour="#FFFFFF";
-    this.colours.lightestColour="#FFFFFF";
   }
 
 }

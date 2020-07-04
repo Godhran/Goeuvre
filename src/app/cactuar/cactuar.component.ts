@@ -8,7 +8,6 @@ import { TimelineLite, TimelineMax, Linear, Elastic, Expo, Power0 } from 'gsap';
 export class CactuarComponent implements OnInit {
   dunesParalaxAnimation = new TimelineLite({ paused: true, repeat: -1 });
   closeParalaxAnimation = new TimelineLite({ paused: true, repeat: -1 });
-  distantParalaxAnimation = new TimelineLite({ paused: true, repeat: -1 });
   cactuarRunAnimation = new TimelineLite({ paused: true, repeat: -1 });
 
   constructor() { }
@@ -16,7 +15,6 @@ export class CactuarComponent implements OnInit {
   ngOnInit(): void {
     this.initialiseDunes();
     this.initialiseClose();
-    this.initialiseDistant();
     this.initialiseCactuar();
   }
 
@@ -32,18 +30,6 @@ export class CactuarComponent implements OnInit {
     this.closeParalaxAnimation.play();
   }
   
-  initialiseDistant() {
-    // this.distantParalaxAnimation
-    //   .fromTo('#Distant', 4, {
-    //     transformOrigin: "100% 50%",
-    //     x: 0, ease: Power0.easeNone
-    //   }, {
-    //     x: -0, ease: Power0.easeNone
-    //   }, "=-0")
-
-    // this.distantParalaxAnimation.play();
-  }
-
   initialiseCactuar() {
     this.cactuarRunAnimation
     .fromTo('#Cactuar1', 0, {
