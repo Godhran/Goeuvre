@@ -8,6 +8,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CactuarComponent } from './cactuar/cactuar.component';
 import { GudetamaComponent } from './gudetama/gudetama.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { WoahComponent } from './woah/woah.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { GudetamaComponent } from './gudetama/gudetama.component';
     NavbarComponent,
     FooterComponent,
     CactuarComponent,
-    GudetamaComponent
+    GudetamaComponent,
+    GalleryComponent,
+    WoahComponent
   ],
   imports: [
     BrowserModule,
