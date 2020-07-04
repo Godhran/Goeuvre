@@ -16,16 +16,20 @@
 }
 
 .woahText {
-    animation: rotation 5s infinite linear;
+    animation: rotation 4s infinite linear;
 }
 
 @keyframes rotation {
-    from {
-        transform: rotate(0deg);
+    0% {
+        transform: scale(0.95) rotate(0deg);
         transform-origin: 50% 50%;
     }
-    to {
-        transform: rotate(359deg);
+    50% {
+        transform: scale(1.1) rotate(179deg);
+        transform-origin: 50% 50%;
+    }
+    100% {
+        transform: scale(0.95) rotate(359deg);
         transform-origin: 50% 50%;
     }
 }
