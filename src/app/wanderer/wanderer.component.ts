@@ -43,6 +43,19 @@ export class WandererComponent implements OnInit {
         ease: Power0.easeNone
       }, "=-0")
 
+      // .to('#Close', this.animationSpeed, {
+      //   transformOrigin: "50% 50%",
+      //   x: -150,
+      //   ease: Power0.easeNone
+      // }, 0)
+      // .to('#Close', this.animationSpeed, {
+      //   transformOrigin: "50% 50%",
+      //   x: 150,
+      //   ease: Power0.easeNone
+      // }, 0)
+
+
+
     this.MiddleAnimation
       .fromTo('#Middle', this.animationSpeed, {
         transformOrigin: "50% 50%",
@@ -59,21 +72,44 @@ export class WandererComponent implements OnInit {
         ease: Power0.easeNone
       }, "=-0")
 
+      // .to('#Middle', this.animationSpeed, {
+      //   transformOrigin: "50% 50%",
+      //   x: -200,
+      //   ease: Power0.easeNone
+      // }, 0)
+      // .to('#Middle', this.animationSpeed, {
+      //   transformOrigin: "50% 50%",
+      //   x: 200,
+      //   ease: Power0.easeNone
+      // }, 0)
+
+
     this.FarAnimation
-      .fromTo('#Far', this.animationSpeed, {
-        transformOrigin: "50% 50%",
-        x: -250
-      }, {
-        x: 250,
-        ease: Power0.easeNone
-      }, "=-0")
-      .fromTo('#Far', this.animationSpeed, {
-        transformOrigin: "50% 50%",
-        x: 250,
-      }, {
-        x: -250,
-        ease: Power0.easeNone
-      }, "=-0")
+    .fromTo('#Far', this.animationSpeed, {
+      transformOrigin: "50% 50%",
+      x: -250
+    }, {
+      x: 250,
+      ease: Power0.easeNone
+    }, "=-0")
+    .fromTo('#Far', this.animationSpeed, {
+      transformOrigin: "50% 50%",
+      x: 250,
+    }, {
+      x: -250,
+      ease: Power0.easeNone
+    }, "=-0")
+    
+    // .to('#Far', this.animationSpeed, {
+    //   transformOrigin: "50% 50%",
+    //   x: -250,
+    //   ease: Power0.easeNone
+    // }, 0)
+    // .to('#Far', this.animationSpeed, {
+    //   transformOrigin: "50% 50%",
+    //   x: 250,
+    //   ease: Power0.easeNone
+    // }, 0)
 
     this.CloseAnimation.play();
     this.MiddleAnimation.play();
@@ -91,10 +127,9 @@ export class WandererComponent implements OnInit {
       this.FarAnimation.timeScale(1);
     }
     this.slowPlayback=this.slowPlayback?false:true;
-    console.log("CLEAR" + this.slowPlayback);
   }
 
-  assetLoaded(asset){
+  assetLoaded(asset:number){
     switch(asset){
       case 0: this.loadCount++;break;
       case 1: this.loadCount++;break;
