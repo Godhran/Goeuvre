@@ -39,4 +39,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2029 © <a href="http://godhran.com" target="_blank">Odhrán Gormley</a>.
+- Copyright 2020 © <a href="http://godhran.com" target="_blank">Odhrán Gormley</a>.
