@@ -10,6 +10,7 @@ import { CactuarComponent } from './cactuar/cactuar.component';
 import { GudetamaComponent } from './gudetama/gudetama.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { WoahComponent } from './woah/woah.component';
+import { WandererComponent } from './wanderer/wanderer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { WoahComponent } from './woah/woah.component';
     CactuarComponent,
     GudetamaComponent,
     GalleryComponent,
-    WoahComponent
+    WoahComponent,
+    WandererComponent
   ],
   imports: [
     BrowserModule,

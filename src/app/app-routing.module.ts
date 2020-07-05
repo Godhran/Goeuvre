@@ -5,15 +5,18 @@ import { CactuarComponent } from './cactuar/cactuar.component';
 import { GudetamaComponent } from './gudetama/gudetama.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { WoahComponent } from './woah/woah.component';
+import { WandererComponent } from './wanderer/wanderer.component';
 
 
 const routes: Routes = [
   {path:'', component:GalleryComponent},
   {path:'gallery', component:GalleryComponent},
+  {path:'wanderer', component:WandererComponent},
   {path:'woah', component:WoahComponent},
   {path:'cactuar', component:CactuarComponent},
   {path:'gudetama', component:GudetamaComponent},
   {path:'mobpsycho', component:MobComponent},
+  {path:'**', component:GalleryComponent},
 ];
 
 @NgModule({

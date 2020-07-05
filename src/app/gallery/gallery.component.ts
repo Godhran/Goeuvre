@@ -13,6 +13,8 @@ export class GalleryComponent implements OnInit {
     slug: "gudetama", name: "Gudetama", instructions: "<<< Poke his belly!"
   }, {
     slug: "woah", name: "Woah, You Go Big Guy!", instructions: ""
+  },{
+    slug: "wanderer", name: "Wanderer above the Sea of Fog", instructions: ""
   }
   ];
   constructor() { }
