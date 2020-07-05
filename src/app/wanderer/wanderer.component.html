@@ -1,10 +1,10 @@
 <div class="goeuvre-container">
-    <div class="form-container">
+    <div [hidden]=!isLoaded class="form-container">
         <form method="post" class="svgContainer">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1500 1500" style="enable-background:new 0 0 1500 1500;cursor: pointer;" xml:space="preserve" (click)="slowDown()">
-                <image style="overflow:visible;" x="-350" width="2537" height="1500" id="Far"  href="../assets/Wanderer/Wanderer-Far.png"/>
-                <image style="overflow:visible;" x="-400" width="2537" height="1500" id="Middle"  href="../assets/Wanderer/Wanderer-Middle.png"/>
-                <image style="overflow:visible;" x="-450" width="2537" height="1500" id="Close"  href="../assets/Wanderer/Wanderer-Close.png"/>
+                <image style="overflow:visible;" x="-350" width="2537" height="1500" id="Far"  href="../assets/Wanderer/Wanderer-Far.png" (load)="assetLoaded(0)"/>
+                <image style="overflow:visible;" x="-400" width="2537" height="1500" id="Middle"  href="../assets/Wanderer/Wanderer-Middle.png" (load)="assetLoaded(1)"/>
+                <image style="overflow:visible;" x="-450" width="2537" height="1500" id="Close"  href="../assets/Wanderer/Wanderer-Close.png" (load)="assetLoaded(2)"/>
             </svg>
         </form>
     </div>

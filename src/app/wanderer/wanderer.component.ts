@@ -12,6 +12,10 @@ export class WandererComponent implements OnInit {
   CloseAnimation = new TimelineLite({ paused: true, repeat: -1 });
   MiddleAnimation = new TimelineLite({ paused: true, repeat: -1 });
   FarAnimation = new TimelineLite({ paused: true, repeat: -1 });
+
+  //Count total assets loaded and display on 3 : FAR, MIDDLE, CLOSE
+  loadCount:number=0;
+  isLoaded:boolean=false;
   
   animationSpeed: number = 5;
   slowPlayback:boolean=false;
@@ -88,6 +92,17 @@ export class WandererComponent implements OnInit {
     }
     this.slowPlayback=this.slowPlayback?false:true;
     console.log("CLEAR" + this.slowPlayback);
+  }
+
+  assetLoaded(asset){
+    switch(asset){
+      case 0: this.loadCount++;break;
+      case 1: this.loadCount++;break;
+      case 2: this.loadCount++;break;
+    }
+    if(this.loadCount===3){
+      this.isLoaded=true;
+    }
   }
 
 }

@@ -133,6 +133,14 @@
     text-decoration: none;
 }
 
+.hide-content {
+    display: none;
+}
+
+.content-is-lodaded {
+    display: 'inherit';
+}
+
 
 /*
 #Far {
