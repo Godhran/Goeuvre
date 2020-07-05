@@ -14,7 +14,7 @@ export class GalleryComponent implements OnInit {
   }, {
     slug: "woah", name: "Woah, You Go Big Guy!", instructions: ""
   },{
-    slug: "wanderer", name: "Wanderer above the Sea of Fog", instructions: "<<< Click to slow down"
+    slug: "wanderer", name: "Wanderer above the Sea of Fog", instructions: "<<< Click to slow down. Painting by Caspar David Friedrich, 'Wanderer above the Sea of Fog', 1818"
   }
   ];
   constructor() { }
