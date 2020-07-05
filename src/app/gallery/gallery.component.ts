@@ -14,7 +14,7 @@ export class GalleryComponent implements OnInit {
   }, {
     slug: "woah", name: "Woah, You Go Big Guy!", instructions: ""
   },{
-    slug: "wanderer", name: "Wanderer above the Sea of Fog", instructions: ""
+    slug: "wanderer", name: "Wanderer above the Sea of Fog", instructions: "<<< Click to slow down"
   }
   ];
   constructor() { }

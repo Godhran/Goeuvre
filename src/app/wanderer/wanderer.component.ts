@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TimelineLite, TimelineMax, Linear, Elastic, Expo, Power0 } from 'gsap';
+import { isGeneratedFile } from '@angular/compiler/src/aot/util';
 
 @Component({
   selector: 'wanderer',
@@ -11,10 +12,17 @@ export class WandererComponent implements OnInit {
   CloseAnimation = new TimelineLite({ paused: true, repeat: -1 });
   MiddleAnimation = new TimelineLite({ paused: true, repeat: -1 });
   FarAnimation = new TimelineLite({ paused: true, repeat: -1 });
+  
   animationSpeed: number = 5;
+  slowPlayback:boolean=false;
+  
   constructor() { }
 
   ngOnInit(): void {
+    this.setAnimation();
+  }
+
+  setAnimation() {
     this.CloseAnimation
       .fromTo('#Close', this.animationSpeed, {
         transformOrigin: "50% 50%",
@@ -50,22 +58,36 @@ export class WandererComponent implements OnInit {
     this.FarAnimation
       .fromTo('#Far', this.animationSpeed, {
         transformOrigin: "50% 50%",
-        x: -300
+        x: -250
       }, {
-        x: 300,
+        x: 250,
         ease: Power0.easeNone
       }, "=-0")
       .fromTo('#Far', this.animationSpeed, {
         transformOrigin: "50% 50%",
-        x: 300,
+        x: 250,
       }, {
-        x: -300,
+        x: -250,
         ease: Power0.easeNone
       }, "=-0")
-      
+
     this.CloseAnimation.play();
     this.MiddleAnimation.play();
     this.FarAnimation.play();
+  }
+
+  slowDown() {
+    if(this.slowPlayback){
+    this.CloseAnimation.timeScale(0.25);
+    this.MiddleAnimation.timeScale(0.25);
+    this.FarAnimation.timeScale(0.25);
+    }else{
+      this.CloseAnimation.timeScale(1);
+      this.MiddleAnimation.timeScale(1);
+      this.FarAnimation.timeScale(1);
+    }
+    this.slowPlayback=this.slowPlayback?false:true;
+    console.log("CLEAR" + this.slowPlayback);
   }
 
 }
