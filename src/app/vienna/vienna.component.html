@@ -1,0 +1,23 @@
+<p>vienna works!</p>
+<div class="goeuvre-container">
+    <div [hidden]=!isLoaded class="form-container">
+        <form method="post" class="svgContainer">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1500 1500" style="enable-background:new 0 0 1500 1500;cursor: pointer;" xml:space="preserve" (click)="revealInfo()">
+            
+            <image style="overflow:visible;" x="-320" width="2537" height="1500" id="Middle"  href="../assets/Vienna/ViennaFull.png" (load)="assetLoaded()"/>
+            
+            
+            <g id="paintingDetails">
+                <!-- <rect x="25" y="600" height="400" width="1500" style="fill:black;opacity:0.25"></rect> -->
+                <text class="paintingTitle" text-rendering="optimizeLegibility" x="50" y="750">The Josef Square</text>
+                <text class="paintingTitle" text-rendering="optimizeLegibility" x="50" y="875">In Vienna</text>
+                <text class="paintingArtist" text-rendering="optimizeLegibility" x="50" y="950">Rudolf Von Alt, 1831</text>
+            </g>
+
+            <image style="overflow:visible;" x="-320" width="2537" height="1500" id="buildingLarge"  href="../assets/Vienna/BuildingLarge.png" (load)="assetLoaded()"/>
+            <image style="overflow:visible;" x="-320" width="2537" height="1500" id="ViennaBoy"  href="../assets/Vienna/ViennaBoy.png" (load)="assetLoaded()"/>
+            <image style="overflow:visible;" x="-320" width="2537" height="1500" id="ViennaMan"  href="../assets/Vienna/ViennaMan.png" (load)="assetLoaded()"/>
+        </svg>
+        </form>
+    </div>
+</div>

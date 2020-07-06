@@ -11,6 +11,7 @@ import { GudetamaComponent } from './gudetama/gudetama.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { WoahComponent } from './woah/woah.component';
 import { WandererComponent } from './wanderer/wanderer.component';
+import { ViennaComponent } from './vienna/vienna.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { WandererComponent } from './wanderer/wanderer.component';
     GudetamaComponent,
     GalleryComponent,
     WoahComponent,
-    WandererComponent
+    WandererComponent,
+    ViennaComponent
   ],
   imports: [
     BrowserModule,

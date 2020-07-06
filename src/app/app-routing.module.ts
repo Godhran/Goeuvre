@@ -6,11 +6,13 @@ import { GudetamaComponent } from './gudetama/gudetama.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { WoahComponent } from './woah/woah.component';
 import { WandererComponent } from './wanderer/wanderer.component';
+import { ViennaComponent } from './vienna/vienna.component';
 
 
 const routes: Routes = [
   {path:'', component:GalleryComponent},
   {path:'gallery', component:GalleryComponent},
+  {path:'vienna', component:ViennaComponent},
   {path:'wanderer', component:WandererComponent},
   {path:'woah', component:WoahComponent},
   {path:'cactuar', component:CactuarComponent},

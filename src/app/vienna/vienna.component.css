@@ -1,0 +1,157 @@
+.goeuvre-container {
+    padding: 80px 0;
+}
+
+.goeuvre-container .image-holder {
+    display: table-cell;
+    width: auto;
+    background-size: cover;
+}
+
+.svgContainer {
+    border-style: double;
+    border-color: white;
+    border-width: 1em;
+    background-color: #232323;
+}
+
+.woahText {
+    animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform: scale(0.95) rotate(0deg);
+        transform-origin: 50% 50%;
+    }
+    50% {
+        transform: scale(1.1) rotate(179deg);
+        transform-origin: 50% 50%;
+    }
+    100% {
+        transform: scale(0.95) rotate(359deg);
+        transform-origin: 50% 50%;
+    }
+}
+
+.goeuvre-container .form-container {
+    display: table;
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.animatedLine {
+    stroke-dasharray: 100;
+    animation: dash 1s linear infinite;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 1000;
+    }
+}
+
+.animatedLine2 {
+    stroke-dasharray: 50;
+    animation: dash2 1s linear infinite;
+}
+
+@keyframes dash2 {
+    to {
+        stroke-dashoffset: 500;
+    }
+}
+
+.textSVG {
+    fill: red;
+}
+
+.goeuvre-container form {
+    display: table-cell;
+    width: 400px;
+    color: #505e6c;
+}
+
+
+/* @media (max-width:991px) {
+    .goeuvre-container form {
+        padding: 40px;
+    }
+} */
+
+.goeuvre-container form h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.goeuvre-container form .form-control {
+    background: #f7f9fc;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 6px;
+    height: 40px;
+}
+
+.goeuvre-container form .form-check {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.goeuvre-container form .btn-primary {
+    background: #f4476b;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important;
+}
+
+.goeuvre-container form .btn-primary:hover,
+.goeuvre-container form .btn-primary:active {
+    background: #eb3b60;
+}
+
+.goeuvre-container form .btn-primary:active {
+    transform: translateY(1px);
+}
+
+.goeuvre-container form .already {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.hide-content {
+    display: none;
+}
+
+.content-is-lodaded {
+    display: 'inherit';
+}
+
+.paintingTitle {
+    font-family: 'Anton', sans-serif;
+    font-size: 85pt;
+    fill: white;
+    text-transform: uppercase;
+}
+
+.paintingArtist {
+    font-family: 'Anton', sans-serif;
+    font-size: 50pt;
+    fill: white;
+    text-transform: uppercase;
+    font-style: oblique;
+}

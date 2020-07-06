@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TimelineLite, TimelineMax, Linear, Elastic, Expo, Power0 } from 'gsap';
-import { isGeneratedFile } from '@angular/compiler/src/aot/util';
 
 @Component({
   selector: 'wanderer',
@@ -130,11 +129,12 @@ export class WandererComponent implements OnInit {
   }
 
   assetLoaded(asset:number){
-    switch(asset){
-      case 0: this.loadCount++;break;
-      case 1: this.loadCount++;break;
-      case 2: this.loadCount++;break;
-    }
+    // switch(asset){
+    //   case 0: this.loadCount++;break;
+    //   case 1: this.loadCount++;break;
+    //   case 2: this.loadCount++;break;
+    // }
+    this.loadCount++;
     if(this.loadCount===3){
       this.isLoaded=true;
     }
