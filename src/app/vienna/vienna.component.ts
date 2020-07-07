@@ -17,6 +17,8 @@ export class ViennaComponent implements OnInit {
   isPlaying:boolean=false;
   
   animationSpeed: number = 5;
+  timing: number = 1.25;
+
 
   constructor() { }
 
@@ -26,34 +28,34 @@ export class ViennaComponent implements OnInit {
 
   initBuildingAnimation(){
     this.BuildingAnimation
-    .fromTo('#paintingDetails', 2, {
+    .fromTo('#paintingDetails', this.timing, {
       transformOrigin: "50% 50%",
       x:900
     }, {
       x:0,
       ease: Power0.easeNone
     }, "=-0")    
-    .fromTo('#buildingLarge', 2, {
+    .fromTo('#buildingLarge', this.timing, {
       transformOrigin: "50% 50%",
       x:0
     }, {
       x:100,
       ease: Power0.easeNone
-    }, "=-2")   
-    .fromTo('#ViennaBoy', 2, {
+    }, `=-${this.timing}`)   
+    .fromTo('#ViennaBoy', this.timing, {
       transformOrigin: "50% 50%",
       x:0,
     }, {
       x:25,
       ease: Power0.easeNone
-    }, "=-2")   
-    .fromTo('#ViennaMan', 2, {
+    }, `=-${this.timing}`)   
+    .fromTo('#ViennaMan', this.timing, {
       transformOrigin: "50% 50%",
       x:0
     }, {
       x:63,
       ease: Power0.easeNone
-    }, "=-2")   
+    }, `=-${this.timing}`)   
   }
 
   assetLoaded(){
