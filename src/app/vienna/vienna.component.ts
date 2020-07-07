@@ -42,7 +42,7 @@ export class ViennaComponent implements OnInit {
     }, "=-2")   
     .fromTo('#ViennaBoy', 2, {
       transformOrigin: "50% 50%",
-      x:0
+      x:0,
     }, {
       x:25,
       ease: Power0.easeNone

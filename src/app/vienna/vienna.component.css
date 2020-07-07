@@ -171,3 +171,15 @@
     user-select: none;
     /* Standard */
 }
+
+.blackWhite {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: 2s;
+}
+
+.fullColour {
+    filter: grayscale(0%);
+    transition: 1s;
+}
