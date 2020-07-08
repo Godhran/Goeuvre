@@ -21,6 +21,7 @@
 .navigation-clean .navbar-brand {
     font-weight: bold;
     color: inherit;
+    text-transform: lowercase;
 }
 
 a {

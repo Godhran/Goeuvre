@@ -1,0 +1,28 @@
+<loading-animation [hidden]=isLoaded></loading-animation>
+<div [hidden]=!isLoaded class="goeuvre-container">
+    <div class="form-container">
+        <form method="post" class="svgContainer">
+
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1500 1500" style="enable-background:new 0 0 1500 1500;" xml:space="preserve">
+                <filter id="duotone">
+
+                    <feColorMatrix type="matrix" values=".33 .33 .33 0 0
+                            .33 .33 .33 0 0
+                            .33 .33 .33 0 0
+                             0   0   0  1 0">
+                    </feColorMatrix>
+            
+                    <!-- ... -->
+                </filter>
+                
+                
+                <!-- <g class="blackWhite"> -->
+                    <image x="-320" width="2537" height="1500" id="Scene" href="../assets/Solvay/SolvayFull.png" (load)="assetLoaded()" filter="url(#duotone)"/>
+                <!-- </g> -->
+                <rect x="0" y="0" height="1500" id="overlay" width="1500" fill="black"></rect> 
+                <image #ref x="945" y="745" height="575" id="Einstein"  href="../assets/Solvay/Einstein.png" (click)="animateElement(ref)" (load)="assetLoaded()"/>
+                <text id="personName" class="personName" text-rendering="optimizeLegibility" x="200" y="700">Albert Einstein</text>
+        </svg>
+        </form>
+    </div>
+</div>

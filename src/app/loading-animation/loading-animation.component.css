@@ -1,5 +1,5 @@
 .goeuvre-container {
-    padding: 80px 0;
+    padding: 0;
 }
 
 .goeuvre-container .image-holder {
@@ -9,10 +9,30 @@
 }
 
 .svgContainer {
-    border-style: double;
-    border-color: white;
-    border-width: 1em;
     background-color: #232323;
+}
+
+.loadingAnimationContainer {
+    background-color: #232323;
+}
+
+.woahText {
+    animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform: scale(0.95) rotate(0deg);
+        transform-origin: 50% 50%;
+    }
+    50% {
+        transform: scale(1.1) rotate(179deg);
+        transform-origin: 50% 50%;
+    }
+    100% {
+        transform: scale(0.95) rotate(359deg);
+        transform-origin: 50% 50%;
+    }
 }
 
 .goeuvre-container .form-container {
@@ -111,4 +131,55 @@
     color: #6f7a85;
     opacity: 0.9;
     text-decoration: none;
+}
+
+.hide-content {
+    display: none;
+}
+
+.content-is-lodaded {
+    display: 'inherit';
+}
+
+.paintingTitle {
+    font-family: 'Anton', sans-serif;
+    font-size: 85pt;
+    fill: white;
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+}
+
+.paintingArtist {
+    font-family: 'Anton', sans-serif;
+    font-size: 50pt;
+    fill: white;
+    text-transform: uppercase;
+    font-style: oblique;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+}
+
+.blackWhite {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: 2s;
+}
+
+.fullColour {
+    filter: grayscale(0%);
+    transition: 1s;
 }

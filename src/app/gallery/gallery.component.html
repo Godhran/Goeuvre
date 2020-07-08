@@ -2,7 +2,7 @@
     <div class="form-container">
         <form method="post">
             <div style="text-align: center;">
-                <img src="../../assets/Goeuvre Logo.png" alt="Goeuvre Logo" width="150" height="150" />
+                <img src="../../assets/Logo.png" alt="Goeuvre Logo" width="150" height="150" />
             </div>
             <ul class="list-unstyled">
                 <li *ngFor="let piece of galleryList"><a ngClass="galleryLink" role="presentation" [routerLink]="['/', piece.slug]">{{piece.name}}</a> <span class="galleryInstructions">{{piece.instructions}}</span></li>

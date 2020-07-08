@@ -12,6 +12,9 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { WoahComponent } from './woah/woah.component';
 import { WandererComponent } from './wanderer/wanderer.component';
 import { ViennaComponent } from './vienna/vienna.component';
+import { LoadingAnimationComponent } from './loading-animation/loading-animation.component';
+import { SolvayComponent } from './solvay/solvay.component';
+import { TallgeeseComponent } from './tallgeese/tallgeese.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { ViennaComponent } from './vienna/vienna.component';
     GalleryComponent,
     WoahComponent,
     WandererComponent,
-    ViennaComponent
+    ViennaComponent,
+    LoadingAnimationComponent,
+    SolvayComponent,
+    TallgeeseComponent
   ],
   imports: [
     BrowserModule,

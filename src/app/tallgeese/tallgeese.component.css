@@ -112,3 +112,67 @@
     opacity: 0.9;
     text-decoration: none;
 }
+
+.darkLineart {
+    fill: #302c2e;
+    stroke-width: 1;
+    stroke: #302c2e;
+    transition: 2s;
+}
+
+.colouredLineArt {
+    fill: #3e2347;
+    stroke-width: 1;
+    stroke: #3e2347;
+    transition: 2s;
+}
+
+.darkBackground {
+    fill: #ffffeb;
+    transition: 2s;
+}
+
+.colouredBackground {
+    fill: #ffe478;
+    transition: 2s;
+}
+
+.goldSVG {
+    fill: #FFB570;
+    transition: 2s;
+}
+
+.metalSVG {
+    fill: #7E7E8F;
+    transition: 2s;
+}
+
+.redSVG {
+    fill: #B0305C;
+    transition: 2s;
+}
+
+.blueSVG {
+    fill: #66FFE3;
+    transition: 2s;
+}
+
+.fullColour {
+    filter: grayscale(0%);
+    transition: 1s;
+}
+
+.personName {
+    font-family: 'Anton', sans-serif;
+    font-size: 85pt;
+    fill: white;
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+}
