@@ -15,6 +15,7 @@ import { ViennaComponent } from './vienna/vienna.component';
 import { LoadingAnimationComponent } from './loading-animation/loading-animation.component';
 import { SolvayComponent } from './solvay/solvay.component';
 import { TallgeeseComponent } from './tallgeese/tallgeese.component';
+import { ZakuComponent } from './zaku/zaku.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TallgeeseComponent } from './tallgeese/tallgeese.component';
     ViennaComponent,
     LoadingAnimationComponent,
     SolvayComponent,
-    TallgeeseComponent
+    TallgeeseComponent,
+    ZakuComponent
   ],
   imports: [
     BrowserModule,

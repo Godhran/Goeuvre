@@ -9,12 +9,14 @@ import { WandererComponent } from './wanderer/wanderer.component';
 import { ViennaComponent } from './vienna/vienna.component';
 import { SolvayComponent } from './solvay/solvay.component';
 import { TallgeeseComponent } from './tallgeese/tallgeese.component';
+import { ZakuComponent } from './zaku/zaku.component';
 
 
 const routes: Routes = [
   {path:'', component:GalleryComponent},
   {path:'gallery', component:GalleryComponent},
   {path:'vienna', component:ViennaComponent},
+  {path:'zaku', component:ZakuComponent},
   {path:'solvay', component:SolvayComponent},
   {path:'tallgeese', component:TallgeeseComponent},
   {path:'wanderer', component:WandererComponent},
