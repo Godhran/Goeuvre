@@ -19,6 +19,8 @@ export class GalleryComponent implements OnInit {
     slug: "vienna", name: "The Josef Square In Vienna", instructions: "<<< Click to reveal details. Painting by Rudolf Von Alt, 'The Josef Square In Vienna'"
   },{
     slug: "tallgeese", name: "Tallgeese", instructions: "<<< Click to reveal details."
+  },{
+    slug: "zaku", name: "Zaku", instructions: ""
   }
   ];
   constructor() { }
