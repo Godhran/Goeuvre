@@ -126,10 +126,10 @@ export class LuffyComponent implements OnInit {
 
   startBountyTimer(){
     this.interval = setInterval(() => {
-      if(this.bountyCount<=10000000){
-        this.bountyCount+=10000; this.bounty=`${this.bountyCount.toLocaleString()}-`
+      if(this.bountyCount<=990000000){
+        this.bountyCount+=100000; this.bounty=`${this.bountyCount.toLocaleString()}-`
       }else{
-        this.bounty=`!!,!!!,!!!-`;
+        this.bounty=`!!!,!!!,!!!-`;
         clearInterval();
       }
     },100)

@@ -125,6 +125,7 @@
     font-size: 7em;
     text-align: right;
     /* letter-spacing: 0.05em; */
+    letter-spacing: -0.02em;
     fill: #43434f;
 }
 
