@@ -1,0 +1,253 @@
+.goeuvre-container {
+    padding: 80px 0;
+}
+
+.goeuvre-container .image-holder {
+    display: table-cell;
+    width: auto;
+    background-size: cover;
+}
+
+.svgContainer {
+    border-style: double;
+    border-color: white;
+    border-width: 1em;
+    background-color: #232323;
+}
+
+.goeuvre-container .form-container {
+    display: table;
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.goeuvre-container form {
+    display: table-cell;
+    width: 400px;
+    color: #505e6c;
+}
+
+.goeuvre-container form h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.goeuvre-container form .form-control {
+    background: #f7f9fc;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 6px;
+    height: 40px;
+}
+
+.goeuvre-container form .form-check {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.goeuvre-container form .btn-primary {
+    background: #f4476b;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important;
+}
+
+.goeuvre-container form .btn-primary:hover,
+.goeuvre-container form .btn-primary:active {
+    background: #eb3b60;
+}
+
+.goeuvre-container form .btn-primary:active {
+    transform: translateY(1px);
+}
+
+.goeuvre-container form .already {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.darkLineArt {
+    stroke: #43434f;
+    transition: 2s;
+}
+
+.colouredLineArt {
+    fill: #ffffeb;
+    stroke: #43434f;
+    transition: 2s;
+}
+
+.colouredHat {
+    fill: #ffb570;
+    stroke: #43434f;
+    transition: 2s;
+}
+
+.hatShaded {
+    fill: #e36956;
+    stroke: #43434f;
+    transition: 2s;
+}
+
+.mouthColoured {
+    fill: white;
+    stroke: #43434f;
+    transition: 2s;
+}
+
+.darkBackground {
+    fill: white;
+    transition: 2s;
+}
+
+.colouredBackground {
+    fill: #43434f;
+    stroke: #43434f;
+    transition: 2s;
+}
+
+.bountyText {
+    font-family: 'DM Mono', monospace;
+    font-size: 7em;
+    text-align: right;
+    /* letter-spacing: 0.05em; */
+    fill: #43434f;
+}
+
+.bountySubtext {
+    font-family: 'DM Mono', monospace;
+    font-size: 1.1em;
+    text-align: right;
+    font-weight: bold;
+    letter-spacing: -0.1em;
+    /* letter-spacing: 0.05em; */
+    fill: #43434f;
+}
+
+.hairColour {
+    fill: #43434f;
+    stroke: #43434f;
+    transition: 2s;
+}
+
+.goldSVG {
+    fill: #FFB570;
+    transition: 2s;
+}
+
+.metalSVG {
+    fill: #7E7E8F;
+    transition: 2s;
+}
+
+.redSVG {
+    fill: #fe5f5f;
+    stroke: #43434f;
+    transition: 2s;
+}
+
+.blueSVG {
+    fill: #66FFE3;
+    transition: 2s;
+}
+
+.bwFill {
+    fill: #FFFFEB;
+    transition: 2s;
+}
+
+.drawLine {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+    animation: dashBlack 2s linear forwards;
+}
+
+@keyframes dashBlack {
+    to {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
+
+.drawLineWhite {
+    stroke-dasharray: 2500;
+    stroke-dashoffset: 2500;
+    animation: dashWhite 2s linear forwards;
+}
+
+@keyframes dashWhite {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.drawLineTransparent {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: dashTransparent 2s linear forwards;
+}
+
+@keyframes dashTransparent {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.drawLineShaded {
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
+    animation: dashShaded 2s linear forwards;
+}
+
+@keyframes dashShaded {
+    to {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
+
+.invisibleExclamation {
+    opacity: 0;
+    transition: 1s;
+}
+
+.visibleExclamation {
+    opacity: 1;
+    transition: 1s;
+    /* animation: rotateExclamations 1s linear infinite; */
+}
+
+@keyframes rotateExclamations {
+    0% {
+        transform: rotate(-10deg) scale(1);
+        transform-origin: 50% 50%;
+    }
+    50% {
+        transform: rotate(10deg) scale(1.1);
+        transform-origin: 50% 50%;
+    }
+    100% {
+        transform: rotate(-10deg) scale(1);
+        transform-origin: 50% 50%;
+    }
+}
+
+.exclamationMarks {
+    stroke-width: 10;
+    stroke: #FFFFEB;
+    fill: #43434f;
+}

@@ -16,6 +16,7 @@ import { LoadingAnimationComponent } from './loading-animation/loading-animation
 import { SolvayComponent } from './solvay/solvay.component';
 import { TallgeeseComponent } from './tallgeese/tallgeese.component';
 import { ZakuComponent } from './zaku/zaku.component';
+import { LuffyComponent } from './luffy/luffy.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ZakuComponent } from './zaku/zaku.component';
     LoadingAnimationComponent,
     SolvayComponent,
     TallgeeseComponent,
-    ZakuComponent
+    ZakuComponent,
+    LuffyComponent
   ],
   imports: [
     BrowserModule,

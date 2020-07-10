@@ -10,6 +10,7 @@ import { ViennaComponent } from './vienna/vienna.component';
 import { SolvayComponent } from './solvay/solvay.component';
 import { TallgeeseComponent } from './tallgeese/tallgeese.component';
 import { ZakuComponent } from './zaku/zaku.component';
+import { LuffyComponent } from './luffy/luffy.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path:'gallery', component:GalleryComponent},
   {path:'vienna', component:ViennaComponent},
   {path:'zaku', component:ZakuComponent},
+  {path:'luffy', component:LuffyComponent},
   {path:'solvay', component:SolvayComponent},
   {path:'tallgeese', component:TallgeeseComponent},
   {path:'wanderer', component:WandererComponent},
