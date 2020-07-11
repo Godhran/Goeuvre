@@ -14,9 +14,10 @@ export class LuffyComponent implements OnInit {
   ExclamationAnimation = new TimelineLite({ paused: false, repeat: -1 });
   HeadAnimation = new TimelineLite({ paused: false, repeat: -1 });
 
-  isBW = true;
+  isBW:boolean = true;
   bountyCount:number=0;
   bounty:string = "0-";
+  waitComplete:boolean=false;
   interval;
 
   // currentColour;
@@ -28,12 +29,9 @@ export class LuffyComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // setTimeout(() => {
-    //   this.initHand();
-    //   this.startBountyTimer();
-    //   this.initExclamations();
-    //   this.initHead();
-    // },3000);
+    setTimeout(() => {
+      this.waitComplete=true;
+    },3000);
   }
 
   initHead(){

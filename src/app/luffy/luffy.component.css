@@ -194,7 +194,7 @@
     stroke-linejoin: round;
     stroke-miterlimit: 10;
     stroke-width: 5;
-    animation: dashBlack 2s linear forwards;
+    animation: dashBlack 3s linear forwards;
 }
 
 @keyframes dashBlack {
@@ -211,7 +211,7 @@
     stroke-linejoin: round;
     stroke-miterlimit: 10;
     stroke-width: 5;
-    animation: dashWhite 2s linear forwards;
+    animation: dashWhite 3s linear forwards;
 }
 
 @keyframes dashWhite {
@@ -227,7 +227,7 @@
     stroke-linejoin: round;
     stroke-miterlimit: 10;
     stroke-width: 5;
-    animation: dashTransparent 2s linear forwards;
+    animation: dashTransparent 3s linear forwards;
 }
 
 @keyframes dashTransparent {
@@ -240,7 +240,7 @@
     stroke-dasharray: 2300;
     stroke-dashoffset: 2300;
     stroke-width: 5;
-    animation: dashShaded 2s linear forwards;
+    animation: dashShaded 3s linear forwards;
 }
 
 @keyframes dashShaded {
