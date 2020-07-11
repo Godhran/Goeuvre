@@ -127,6 +127,14 @@
     /* letter-spacing: 0.05em; */
     letter-spacing: -0.02em;
     fill: #43434f;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
 }
 
 .bountySubtext {
@@ -137,6 +145,14 @@
     letter-spacing: -0.1em;
     /* letter-spacing: 0.05em; */
     fill: #43434f;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
 }
 
 .hairColour {
@@ -177,6 +193,7 @@
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-miterlimit: 10;
+    stroke-width: 5;
     animation: dashBlack 2s linear forwards;
 }
 
@@ -193,6 +210,7 @@
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-miterlimit: 10;
+    stroke-width: 5;
     animation: dashWhite 2s linear forwards;
 }
 
@@ -208,6 +226,7 @@
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-miterlimit: 10;
+    stroke-width: 5;
     animation: dashTransparent 2s linear forwards;
 }
 
@@ -220,6 +239,7 @@
 .drawLineShaded {
     stroke-dasharray: 2300;
     stroke-dashoffset: 2300;
+    stroke-width: 5;
     animation: dashShaded 2s linear forwards;
 }
 

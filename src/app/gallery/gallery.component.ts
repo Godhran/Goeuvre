@@ -21,6 +21,8 @@ export class GalleryComponent implements OnInit {
     slug: "tallgeese", name: "Tallgeese", instructions: "<<< Click to reveal details."
   },{
     slug: "zaku", name: "Zaku", instructions: "<<< Click to colour."
+  },{
+    slug: "luffy", name: "Wanted: Monkey D Luffy", instructions: "<<< Click to colour."
   }
   ];
   constructor() { }
